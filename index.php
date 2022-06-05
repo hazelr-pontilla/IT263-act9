@@ -112,9 +112,7 @@
             header('location: index.php');
         } 
     ?>
-    <hr>
-    <h2>List of Users</h2>
-    
+    <hr>    
     <?php
         $result = getAllData();
 
