@@ -82,11 +82,19 @@
     ?>
 
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-    <p>First Name: <span style="color:red;" >*</span> <br> <input type="text" name="fname"></p>
-    <p>Last Name: <span style="color:red;" >*</span> <br> <input type="text" name="lname"></p>
-    <p>Email: <span style="color:red;" >*</span> <br> <input type="email" name="email"></p>
+    <p>First Name: <span style="color:red;" >*</span> <br> 
+        <input type="text" name="fname" value="<?php if(isset($_POST['fname'])) echo $_POST['fname']; ?>">
+    </p> 
+    <p>Last Name: <span style="color:red;" >*</span> <br> 
+        <input type="text" name="lname" value="<?php if(isset($_POST['lname'])) echo $_POST['lname']; ?>">
+    </p>
+    <p>Email: <span style="color:red;" >*</span> <br> 
+        <input type="email" name="email" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>">
+    </p>
     <input type="submit" name="save" value="Save">
     </form>
+
+    // the value in here is the sticky form
 
     <br>
     <hr>
