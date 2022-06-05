@@ -94,7 +94,7 @@
     <input type="submit" name="save" value="Save">
     </form>
 
-    // the value in here is the sticky form
+    <!--  the value in here is the sticky form, para mag stay hiya incase mag sasave hin data pero kulang -->
 
     <br>
     <hr>
