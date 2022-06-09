@@ -12,7 +12,7 @@
 
         if($fname === FALSE)
         {
-            $errors['fname'] = 'Please fill out the required form';
+            $errors['fname'] = 'Please fill out the required form of this.';
         }
         if($lname === FALSE)
         {
